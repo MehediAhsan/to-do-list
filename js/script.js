@@ -27,4 +27,8 @@ document.getElementById("input-btn").addEventListener("click", function () {
       event.target.parentNode.parentNode.style.textDecorationLine = 'line-through'; 
     });
   }
+  const clearBtn = document.getElementById("clear-btn");
+  clearBtn.addEventListener("click", function(event){
+      tableBodyRow.style.display = "none";
+  });
 });
